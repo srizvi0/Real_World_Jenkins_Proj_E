@@ -16,6 +16,7 @@ spec:
       containers:
       - name: container1
         image: najamrizvi3/imageproje:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8085
 ---
