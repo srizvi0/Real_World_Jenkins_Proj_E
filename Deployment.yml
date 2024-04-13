@@ -18,7 +18,7 @@ spec:
         image: najamrizvi3/imageproje:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 8088
+        - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -30,7 +30,7 @@ spec:
       app: myspringbootapp
   ports: 
   - protocol: TCP
-    port: 8088
-    targetPort: 8088
+    port: 8080
+    targetPort: 8080
   type: LoadBalancer
 
