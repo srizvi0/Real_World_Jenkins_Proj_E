@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21
+FROM lolhens/baseimage-openjre
+ADD target/springbootApp.jar springbootApp.jar
 EXPOSE 8085
-COPY target/springbootApp.jar springbootApp.jar
-CMD ["java", "-jar", "springbootApp.jar"]
+ENTRYPOINT ["java", "-jar", "springbootApp.jar"]
