@@ -15,7 +15,7 @@ spec:
     spec: 
       containers:
       - name: container1
-        image:
+        image: najamrizvi3/imageproje:latest
         ports:
         - containerPort: 8085
 ---
