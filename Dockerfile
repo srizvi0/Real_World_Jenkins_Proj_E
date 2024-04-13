@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21
+FROM adoptopenjdk/openjdk11
 RUN mkdir /opt/app
 EXPOSE 8085
 COPY target/springbootApp.jar /opt/app.jar
