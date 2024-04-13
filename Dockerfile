@@ -1,4 +1,4 @@
 FROM eclipse-temurin:21
 RUN mkdir /opt/app
-COPY springbootApp.jar /opt/app
-CMD ["java", "-jar", "/opt/app/springbootApp.jar"]
+COPY target/springbootApp.jar /opt/app.jar
+CMD ["java", "-jar", "/opt/app.jar"]
